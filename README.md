@@ -1,3 +1,4 @@
 ##README.md
 
-- 개인 repository 입니다.
+- public repository 입니다.
+- 업로드 중
