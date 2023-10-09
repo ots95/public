@@ -1,9 +1,0 @@
-FROM [NUMBER].dkr.ecr.ap-northeast-2.amazonaws.com/[IMAGE]:latest
-ADD build/libs/* /home/[DIR]/
-WORKDIR /home/[DIR]/
-ARG JAR_FILE=build/libs/*.jar
-COPY ${JAR_FILE} app.jar
-COPY filebeat/prod_filebeat.yml /home/[DIR]/filebeat/prod_filebeat.yml
-ENV ACTIVE_PROFILE release
-EXPOSE 8080
-ENTRYPOINT ["./prod_run.sh"]
