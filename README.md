@@ -81,4 +81,4 @@ __사내 로그 스트리밍 서비스 구축__
 
 __사내 모니터링 시스템 구축__
 - 실시간 서비스 모니터링을 위한 시스템 구축 
-- 사용 기술 : APM(Site24, Zabbix, AWS Cloudwatch) Trace Log(Pinpoint), Graph(Grafana), Alert(Slack, Opsgenie)
+- 사용 기술 : APM(Site24, Zabbix, AWS Cloudwatch), Trace Log(Pinpoint), Graph(Grafana), Alert(Slack, Opsgenie)
