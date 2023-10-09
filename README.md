@@ -40,7 +40,7 @@ Resume
 -------------
 > [푸드테크](https://www.foodtechkorea.com/)
 
-RabbitMQ 서비스 도입
+ RabbitMQ 서비스 도입
 - 하루 100만건에 달하는 주문정보를 처리하기 위해 메시징 큐 서비스 도입
 - RabbitMQ 클러스터 구성 및 운영
 사용 기술 : RabbitMQ, AWS EC2, Bash
