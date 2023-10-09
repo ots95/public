@@ -39,3 +39,4 @@ Resume
 진행 프로젝트
 -------------
 > [푸드테크](https://www.foodtechkorea.com/)
+- ㅁㄴㅇㄹ
