@@ -4,7 +4,7 @@ Resume
 오태석
 -------------
 클라우드 인프라 업무를 통해 성장중인 인프라 엔지니어입니다.
-- Email : ots9510@gmail.com
+- Email : black0840b@gmail.com
 
 경력
 -------------
