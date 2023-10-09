@@ -1,0 +1,31 @@
+#ansible-playbook
+
+---
+
+- name: Find and fetch result_tar files
+  hosts: ubuntu
+  become: yes
+  gather_facts: false
+
+  vars:
+    remote_path: "/home/ubuntu/"
+    local_path: "/etc/ansible/outputs/isms/"
+
+  tasks:
+    - name: Find tar files
+      find:
+        paths: "{{ remote_path }}"
+        file_type: file
+        patterns: "*.tar"
+      register: found_files
+
+    - name: Fetch tar files
+      fetch:
+        src: "{{ item.path }}"
+        dest: "{{ local_path }}/{{ ansible_host }}_{{ item.path | basename }}"
+        flat: yes
+      with_items: "{{ found_files.files }}"
+
+
+
+...

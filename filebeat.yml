@@ -1,0 +1,57 @@
+# ============================== Filebeat inputs ===============================
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+    - /LOG/nginx/orderapi-access.log
+  fields:
+    service_name: orderapi
+      #log_name: orderapi-access
+    log_type: nginx-access
+- type: log
+  enabled: true
+  paths:
+    - /LOG/nginx/orderapi-error.log
+  fields:
+    service_name: orderapi
+      #log_name: orderapi-error
+    log_type: nginx-error
+- type: log
+  enabled: true
+  paths:
+    - /LOG/orderapi/orderapi.log
+  fields:
+    service_name: orderapi
+      #log_name: orderapi
+    log_type: service
+- type: log
+  enabled: true
+  paths:
+    - /LOG/orderapi/orderapi_order.log
+  fields:
+    service_name: orderapi
+      #log_name: orderapi_order
+    log_type: service
+
+# ============================== Filebeat modules ==============================
+filebeat.config.modules:
+  path: ${path.config}/modules.d/*.yml
+  reload.enabled: false
+
+# ------------------------------ Logstash Output -------------------------------
+output.logstash:
+  hosts: ["[IP_ADDR]:5044"]
+
+# ================================= Processors =================================
+processors:
+  - add_host_metadata:
+      when.not.contains.tags: forwarded
+  - add_cloud_metadata: ~
+  - add_docker_metadata: ~
+  - add_kubernetes_metadata: ~
+# ================================= Logging =================================
+logging.to_files: true
+logging.files:
+  path: /var/log/filebeat
+  name: filebeat
+  permissions: 0600

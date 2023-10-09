@@ -1,0 +1,12 @@
+#ansible-playbook
+
+---
+- name: run_script
+  hosts: awsprod
+  become: true
+
+  tasks:
+  - name: run_script
+    script: /root/Script_linux_20210930.sh
+
+...

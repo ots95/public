@@ -1,0 +1,9 @@
+FROM [NUMBER].dkr.ecr.ap-northeast-2.amazonaws.com/[IMAGE]:latest
+ADD build/libs/* /home/[DIR]/
+WORKDIR /home/[DIR]/
+ARG JAR_FILE=build/libs/*.jar
+COPY ${JAR_FILE} app.jar
+COPY filebeat/qa_filebeat.yml /home/foodtech/filebeat/qa_filebeat.yml  ##이거 추가
+ENV ACTIVE_PROFILE qa
+EXPOSE 8080
+ENTRYPOINT ["./qa_run.sh"]

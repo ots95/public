@@ -1,0 +1,16 @@
+#ansible-playbook
+
+- name: Run commands using shell module
+  hosts: ubuntu
+  become: true
+  tasks:
+  - name: Run commands
+    shell: |
+       systemctl stop newrelic-infra
+       systemctl disable newrelic-infra
+       rm -rf /etc/systemd/system/newrelic-infra.service
+       systemctl daemon-reload
+    register: output
+
+  - debug:
+      msg: "{{output.stdout}}"
