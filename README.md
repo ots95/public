@@ -9,6 +9,7 @@ Resume
 경력
 -------------
 [푸드테크](https://www.foodtechkorea.com/)
+- 전반적인 인프라 시스템 관리와 AWS, Naver Cloud 운영을 담당
 - 2022/05/11 ~
 
 [씨앤토트](https://www.cnthoth.com/)
