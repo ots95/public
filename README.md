@@ -7,9 +7,7 @@ resume
 
 경력
 -------------
-Link: [푸드테크][googlelink]
-
-[foodtechlink]: https://www.foodtechkorea.com
+푸드테크(https://www.foodtechkorea.com/)
 - 2022/05/11 ~
 
 씨앤토트
