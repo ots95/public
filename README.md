@@ -15,7 +15,7 @@ Resume
 
 
 
-기술스택
+기술 스택
 -------------
 - Bash
 - Python
@@ -24,6 +24,15 @@ Resume
 - azure
 - Naver cloud
 - OpenStack
+- Docker
+- Kubernetes
+- Ansible
+- Opensearch(ELK)
+- logstash(ELK)
+- filebeat(ELK)
+- grafana
+- gitlab
+- jenkins
 
 
 진행 프로젝트
