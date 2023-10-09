@@ -21,12 +21,13 @@ Resume
 - Python
 - C
 - AWS
-- azure
+- Azure
 - Naver cloud
 - OpenStack
 - Docker
 - Kubernetes
 - Ansible
+- RabbitMQ
 - Opensearch(ELK)
 - logstash(ELK)
 - filebeat(ELK)
