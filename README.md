@@ -54,6 +54,7 @@ __Ansible 서비스 도입__
 
 __Gitlab 고도화__
 - 신규 gitlab 서버 구성, 기존 gitlab 서버에서 data migration, cd(jenkins) 연동
+- 기존 gitlab 서버 webhook 안되던 이슈 해결
 - 사용 기술 : Gitlab, jenkins, Bash
 
  
@@ -64,11 +65,11 @@ __세븐일레븐 web-was 및 로깅시스템__
 
 __영업관리 서비스 고도화__
 - 브랜드 : BHC,BBQ,굽네,알볼로, 등등
-- 기존 WEB-WAS 환경에서 라이센스 서비스 제거(비용절감)
+- 기존 WEB-WAS 환경에서 라이센스 서비스 제거(비용절감) 및 WEB-WAS 구조 재구성
 - 사용 기술 : Nginx, Tomcat, Bash
 
 __요기요 - 푸드테크 주문시스템 개선__
-- 중개사 없이 요기요 주문정보 연동을 위한 시스템 구축
+- 중개사 없이 요기요 주문정보 연동을 위한 시스템 구축 지원
 - 사용기술 : AWS Security Group, Routing Table
 
 
@@ -82,3 +83,7 @@ __사내 로그 스트리밍 서비스 구축__
 __사내 모니터링 시스템 구축__
 - 실시간 서비스 모니터링을 위한 시스템 구축 
 - 사용 기술 : APM(Site24, Zabbix, AWS Cloudwatch), Trace Log(Pinpoint), Graph(Grafana), Alert(Slack, Opsgenie)
+
+__악성 접근 시 WAF 자동차단 시스템 구축__
+- 비인가 src ip 접근 시, AWS WAF 자동 차단하는 로직 구성
+- 사용 기술 : Bash, AWS WAF
